@@ -39,30 +39,86 @@
     text-align: center;
     padding: 39px 0 0;
   }
-  body .main .main__title {
+  body .main__title {
     margin: 0;
     font-size: 24px;
     font-weight: 700;
     padding: 0 42px;
   }
-  body .main .main__subtitle {
+  body .main__subtitle {
     color: #353535;
     font-size: 18px;
     font-weight: 300;
   }
-  body .main .main__explore {
+  body .main__explore {
+    display: inline-block;
     margin: 27px auto 57px;
     padding: 15px 20px;
     background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
-    border: none;
     border-radius: 25px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-  body .main .main__explore a {
+  body .main__explore button {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: #FFF;
+    border: none;
+    background-color: transparent;
+  }
+  body .main__explore button:hover {
+    cursor: pointer;
+  }
+  body .main__howWorks {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  body .main__howWorks__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  body .main__howWorks__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+  }
+  body .main__howWorks__list__item {
+    background-color: #F6F6F6;
+    font-size: 16px;
+    font-weight: 500;
+    height: 73px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    counter-increment: step-counter;
+  }
+  body .main__howWorks__list__item i {
+    color: #7E7E7E;
+    font-size: 19px;
+  }
+  body .main__howWorks__list__item .active {
+    color: #9356DC;
+  }
+  body .main__howWorks__list__item:before {
+    content: counter(step-counter);
+    margin-right: 20px;
+    font-size: 80%;
+    background-color: #9356CD;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 15px;
+    position: absolute;
+    left: 29px;
   }
 }
 
