@@ -6,6 +6,29 @@
 		background-color: #F6F6F6;
 		margin: 0;
 		
+		.heart {
+			position: relative;
+			color: black;
+			&:before {
+				content: "\f08a";
+				position: absolute;
+			}
+			&:after {
+				content: "\f08a";
+				position: absolute;
+				z-index: 1;
+				opacity: 0;
+				color: transparent;
+				background:linear-gradient(0deg, #9356DC 0%,#FF79DA 100%);
+				background-clip: text;
+				transition: opacity 300ms;
+			}
+			&:hover:after {
+				content: "\f004";
+				opacity: 1;
+			}
+		}
+		
 		.header {
 			display: flex;
 			flex-direction: column;
@@ -132,6 +155,107 @@
 						position: absolute;
 						left: 29px;
 					}
+				}
+			}
+			
+			&__restaurants {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 24px 0 66px 20px;
+				gap: 18px;
+				
+				&__title {
+					font-weight: 700;
+					font-size: 24px;
+					margin: 30px 0 auto;
+				}
+				
+				&__card {
+					background-color: #FFF;
+					display: flex;
+					flex-direction: column;
+					width: 340px;
+					height: 251px;
+					border-radius: 15px;
+					position: relative;
+					margin-left: -3px;
+					text-decoration: none;
+					color: #000;
+					box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.1);
+					
+					&__new {
+						font-weight: 500;
+						font-size: 14px;
+						background-color: #99E2D0;
+						color: #008766;
+						padding: 7px 9px;
+						width: 62px;
+						border-radius: 2px;
+						box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+						position: absolute;
+						top: 13px;
+						right: 12px;
+					}
+					
+					&__image {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: 15px 15px 0 0;
+						box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.1);
+					}
+					
+					&__informations {
+						display: flex;
+						justify-content: space-between;
+						// margin-right: 50px;
+						
+						&__texte {
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							padding-left: 13px;
+							
+							h4 {
+								margin: 16px 0 5px;
+							}
+							
+							span {
+								margin-bottom: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		.footer {
+			background-color: #353535;
+			padding: 22px 25px 6px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			color: #FFF;
+			
+			&__title {
+				font-size: 18px;
+				font-family: "Shrikhand", serif;
+			}
+			
+			&__list {
+				text-align: start;
+				list-style-type: none;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 7px;
+				font-weight: 500;
+				font-size: 16px;
+				
+				i {
+					margin-right: 16px;
+					width: 11px;
 				}
 			}
 		}
