@@ -1,0 +1,39 @@
+@media (max-width: 375px) {
+	body {
+		.header {
+			display: block;
+			&__arrowback {
+				position: absolute;
+				top: 24px;
+				left: 23px;
+				color: #353535;
+			}
+		}
+		
+		.main {
+			padding-top: 0px;
+			text-align: unset;
+			
+			&__image {
+				width: 100%;
+			}
+			
+			&__menu {
+				display: flex;
+				flex-direction: column;
+			
+				&__title {
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					
+					&__text {
+						font-family: "Shrikhand", serif;
+						font-size: 28px;
+						color: #101010;
+					}
+				}
+			}
+		}
+	}
+}
