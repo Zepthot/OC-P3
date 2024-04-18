@@ -121,7 +121,8 @@
     flex-direction: column;
   }
   body .main__image {
-    width: 100%;
+    max-height: 275px;
+    object-fit: cover;
   }
   body .main__menu {
     display: flex;
