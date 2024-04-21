@@ -135,13 +135,14 @@
   }
   body .main__menu__title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   body .main__menu__title__text {
     font-family: "Shrikhand", serif;
     font-size: 28px;
     color: #101010;
+    padding-left: 17px;
   }
   body .main__category {
     padding: 0 13px;
