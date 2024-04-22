@@ -8,7 +8,7 @@
 			
 			@for $i from 0 through 10 {
 				&:nth-child(#{$i}) {
-					animation-delay: 0.2s + (200ms * $i);
+					animation-delay: 0ms + (150ms * $i);
 				}
 			}
 		}
@@ -91,14 +91,11 @@
 			}
 		}
 		
-		.header {
-			display: block;
-			&__arrowback {
-				position: absolute;
-				top: 24px;
-				left: 23px;
-				color: #353535;
-			}
+		.header__arrowback {
+			position: absolute;
+			top: 24px;
+			left: 23px;
+			color: #353535;
 		}
 		
 		.main {
