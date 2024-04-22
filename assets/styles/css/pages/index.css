@@ -1,0 +1,54 @@
+body .main {
+  padding-top: 0px;
+  text-align: unset;
+  display: flex;
+  flex-direction: column;
+}
+body .main__image {
+  max-height: 275px;
+  object-fit: cover;
+}
+body .main__menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  background-color: #f6f6f6;
+  border-radius: 35px;
+  margin-top: -50px;
+}
+body .main__menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main__menu__title__text {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  color: #101010;
+  padding-left: 17px;
+}
+body .main__category {
+  padding: 0 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+body .main__category__title {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+body .main__category__line {
+  width: 40px;
+  border: 2px #99e2d0 solid;
+  margin: 0;
+}
+body .main__explore {
+  margin: 0 auto 40px;
+  width: 146px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */

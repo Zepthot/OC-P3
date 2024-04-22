@@ -1,0 +1,62 @@
+body {
+  .main {
+    padding-top: 0px;
+    text-align: unset;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      max-height: 275px;
+      object-fit: cover;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      background-color: #f6f6f6;
+      border-radius: 35px;
+      margin-top: -50px;
+
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+          font-family: "Shrikhand", serif;
+          font-size: 28px;
+          color: #101010;
+          padding-left: 17px;
+        }
+      }
+    }
+
+    &__category {
+      padding: 0 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+
+      &__title {
+        font-weight: 300;
+        font-size: 16px;
+        margin: 0;
+      }
+
+      &__line {
+        width: 40px;
+        border: 2px #99e2d0 solid;
+        margin: 0;
+      }
+    }
+
+    &__explore {
+      margin: 0 auto 40px;
+      width: 146px;
+      text-align: center;
+    }
+  }
+}

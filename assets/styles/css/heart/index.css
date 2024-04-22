@@ -1,0 +1,36 @@
+.heart__container {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+  background-color: transparent;
+  border: none;
+}
+.heart__container .heart {
+  position: relative;
+  color: black;
+  cursor: pointer;
+}
+.heart__container .heart:before {
+  content: "\f004";
+  font-weight: 400;
+  position: absolute;
+}
+.heart__container .heart:after {
+  content: "\f004";
+  font-weight: 900;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  color: transparent;
+  top: 0.5px;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  transition: opacity 300ms;
+}
+.heart__container .heart:hover:after {
+  content: "\f004";
+  font-weight: 900;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.css.map */
