@@ -35,3 +35,15 @@
     color: #353535;
   }
 }
+
+@media (min-width: 1440px) {
+  .header {
+    &__title {
+      width: 100%;
+    }
+
+    &__location {
+      width: 100%;
+    }
+  }
+}

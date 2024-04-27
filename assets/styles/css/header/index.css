@@ -34,4 +34,13 @@
   color: #353535;
 }
 
+@media (min-width: 1440px) {
+  .header__title {
+    width: 100%;
+  }
+  .header__location {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

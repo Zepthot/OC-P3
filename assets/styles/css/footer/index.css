@@ -35,4 +35,20 @@
   cursor: pointer;
 }
 
+@media (min-width: 1440px) {
+  .footer {
+    padding: 57px 25px 6px;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 90px;
+  }
+  .footer__title {
+    width: 139px;
+  }
+  .footer__list {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

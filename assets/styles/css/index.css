@@ -19,10 +19,11 @@ body .main__subtitle {
   color: #353535;
   font-size: 18px;
   font-weight: 300;
+  padding: 5px;
 }
 body .main__explore {
   display: inline-block;
-  margin: 27px auto 57px;
+  margin: 0 auto 57px;
   padding: 15px 20px;
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   border-radius: 25px;
@@ -95,6 +96,36 @@ body .main__howWorks__list__item:before {
   border-radius: 15px;
   position: absolute;
   left: 29px;
+}
+
+@media (min-width: 1440px) {
+  body .main__title {
+    font-size: 40px;
+  }
+  body .main__howWorks {
+    align-items: center;
+  }
+  body .main__howWorks__title {
+    width: 1055px;
+    text-align: left;
+  }
+  body .main__howWorks__list {
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+  }
+  body .main__howWorks__list__item {
+    width: 335px;
+    position: relative;
+    justify-content: flex-start;
+    gap: 17px;
+  }
+  body .main__howWorks__list__item:before {
+    left: -10px;
+  }
+  body .main__howWorks__list__item i {
+    padding-left: 38px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

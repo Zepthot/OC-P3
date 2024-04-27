@@ -10,7 +10,12 @@
   font-size: 24px;
   margin: 30px 0 auto;
 }
-.restaurants__card {
+.restaurants__container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants__container__card {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -18,16 +23,15 @@
   height: 251px;
   border-radius: 15px;
   position: relative;
-  margin-left: -3px;
   text-decoration: none;
   color: #000;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.restaurants__card__item {
+.restaurants__container__card__item {
   height: 70%;
   width: 100%;
 }
-.restaurants__card__item__new {
+.restaurants__container__card__item__new {
   font-weight: 500;
   font-size: 14px;
   background-color: #99e2d0;
@@ -40,29 +44,49 @@
   top: 13px;
   right: 12px;
 }
-.restaurants__card__item__image {
+.restaurants__container__card__item__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.restaurants__card__item__informations {
+.restaurants__container__card__item__informations {
   display: flex;
   justify-content: space-between;
   margin-top: -2px;
 }
-.restaurants__card__item__informations__texte {
+.restaurants__container__card__item__informations__texte {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 13px;
 }
-.restaurants__card__item__informations__texte h4 {
+.restaurants__container__card__item__informations__texte h4 {
   margin: 16px 0 5px;
 }
-.restaurants__card__item__informations__texte span {
+.restaurants__container__card__item__informations__texte span {
   margin-bottom: 12px;
+}
+
+@media (min-width: 1440px) {
+  .restaurants {
+    align-items: center;
+  }
+  .restaurants__title {
+    width: 1055px;
+    text-align: left;
+  }
+  .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 75px;
+    justify-content: center;
+    width: 1055px;
+  }
+  .restaurants__container__card {
+    width: 490px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
