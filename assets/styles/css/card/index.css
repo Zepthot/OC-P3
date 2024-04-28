@@ -106,5 +106,10 @@
     transform: scale(1);
   }
 }
+@media (min-width: 1440px) {
+  .contain {
+    width: 634px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

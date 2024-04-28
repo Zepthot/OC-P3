@@ -51,4 +51,24 @@ body .main__explore {
   text-align: center;
 }
 
+@media (min-width: 1440px) {
+  body .main {
+    align-items: center;
+    background: #fff;
+  }
+  body .main__image {
+    max-height: 383px;
+    width: 100%;
+  }
+  body .main__menu {
+    width: 1055px;
+    align-items: center;
+    border-radius: 35px 35px 0 0;
+  }
+  body .main__menu__title {
+    gap: 24px;
+    margin-top: 28px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
