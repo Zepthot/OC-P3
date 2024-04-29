@@ -120,7 +120,7 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   body {
     .main {
       &__title {
@@ -131,17 +131,16 @@ body {
         align-items: center;
 
         &__title {
-          width: 1055px;
+          width: 100%;
           text-align: left;
         }
 
         &__list {
-          flex-direction: row;
           width: auto;
           padding: 0;
 
           &__item {
-            width: 335px;
+            min-width: 300px;
             position: relative;
             justify-content: flex-start;
             gap: 17px;
@@ -155,6 +154,23 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  body .main__howWorks {
+    &__title {
+      width: 1055px;
+      text-align: left;
+    }
+
+    &__list {
+      flex-direction: row;
+
+      &__item {
+        width: 335px;
       }
     }
   }

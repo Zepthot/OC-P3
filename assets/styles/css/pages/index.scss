@@ -61,7 +61,7 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   body {
     .main {
       align-items: center;
@@ -73,7 +73,7 @@ body {
       }
 
       &__menu {
-        width: 1055px;
+        width: 75%;
         align-items: center;
         border-radius: 35px 35px 0 0;
 
@@ -82,6 +82,21 @@ body {
           margin-top: 28px;
         }
       }
+      &__category {
+        width: 75%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  body .main {
+    &__menu {
+      width: 1055px;
+    }
+
+    &__category {
+      width: auto;
     }
   }
 }
